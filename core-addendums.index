@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Core Addendums</name>
+		<description>Additional content from the core rulebooks that is missing from the official Aurora content sources.</description>
+		<author url="https://www.adriaan.me">Adriaan Callaerts</author>
+		<update version="0.1.0">
+			<file name="core-addendums.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/core-addendums.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/core-addendums/source.xml" />
+		<file name="conditions.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/core-addendums/conditions.xml" />
+	</files>
+</index>

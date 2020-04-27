@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="items-weapon-of-kinsfolk.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/weapon-of-kinsfolk.xml" />
+		</update>
+	</info>
+
+	<element name="Weapon of Kinsfolk" type="Magic Item" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_MAGIC_ITEM_WEAPON_OF_KINSFOLK">
+		<description>
+			<p class="flavor">A weapon gifted by family, imbued with their well-wishes for strength and courage on the wielders travels and above all else - a safe return home.</p>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon (even without attuning to it). Attuning to this item requires an ally with whom you share family ties (either through blood or marriage) to be within 30 feet.
+			While you are attuned to this item, you gain a bonus of 2 to AC.</p>
+		</description>
+		<sheet>
+			<description>You gain a +{{enhancement}} bonus to attack and damage rolls made with this magic weapon and a +2 bonus to AC.</description>
+		</sheet>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any two-handed melee weapon">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">(ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE),ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</set>
+			<set name="name-format">{{parent}} of Kinsfolk</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="2" bonus="weapon of kinsfolk" />
+		</rules>
+	</element>
+</elements>

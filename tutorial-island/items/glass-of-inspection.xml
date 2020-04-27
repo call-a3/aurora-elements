@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="items-glass-of-inspection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/glass-of-inspection.xml" />
+		</update>
+	</info>
+
+	<element name="Glass of Inspection" type="Magic Item" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_MAGIC_ITEM_GLASS_OF_INSPECTION">
+		<description>
+			<p>A (pair of) glass lens(es) which magnify and expose magical properties. They might be set into a frame to be worn or held. 
+			A glass of inspection grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed.
+			These lenses also grant the ability to cast the <em>Identify</em> spell at will.
+			In addition, they replace the material components requirement to cast Identify.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" />
+		</rules>
+	</element>
+</elements>

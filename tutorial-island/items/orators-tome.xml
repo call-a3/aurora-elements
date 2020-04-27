@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="items-orators-tome.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/orators-tome.xml" />
+		</update>
+	</info>
+
+	<element name="Orators Tome" type="Magic Item" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_MAGIC_ITEM_ORATORS_TOME">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p class="flavor">This leather-bound tome contains a collection of stories, poems, speeches, ... which can be historic but also inspirational in nature.</p>
+			<p>The use of this item grants the user the Inspiring Leader feat.
+			A bard can also use this tome as a spellcasting focus.</p>
+			<div element="ID_PHB_FEAT_INSPIRINGLEADER"></div>
+		</description>
+		<setters>
+			<set name="category">Spellcasting Focus</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="container">Arcane Focus</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="rarity">Common</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_ORATORS_TOME</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_PHB_FEAT_INSPIRINGLEADER" />
+		</rules>
+	</element>
+</elements>

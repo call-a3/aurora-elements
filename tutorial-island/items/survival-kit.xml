@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="items-weapon-of-kinsfolk.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/weapon-of-kinsfolk.xml" />
+		</update>
+	</info>
+
+	<element name="Survival Kit" type="Item" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_MAGIC_ITEM_SURVIVAL_KIT">
+		<description>
+			<p class="flavor">Surviving in the wild is a tough chore. With a survival kit along for the journey, you will that you always seem to find the right plants, herbs and natural aids to make due in dire circumstances.</p>
+			<p>This kit has 3 charges. You learn to prepare nutritious snacks, casting Robinsons’ Snack as a ritual by expending one charge (in addition to the regular components of the spell).
+			<div element="ID_CALLA3_TUTORIALISLAND_SPELL_ROBINSONS_SNACK"></div>
+			In addition, the kit has the following properties:
+			</p>
+			<p class="indent"><strong><em>Components.</em></strong> Survivalists’ utensils include a nut cracker, coconut opener, a small mortar and pestle and a herb &amp; condiments pouch.</p>
+			<p class="indent"><strong><em>Medicine.</em></strong> When treating the wounded, you know just the right herbs and natural essences to use. You are proficient in any medicine checks that involve using natural components to treat someone.</p>
+			<p class="indent"><strong><em>Survival.</em></strong> When foraging for food or water, you can make do with ingredients you scavenge that others would be unable to transform into nourishing meals.</p>
+			<p class="indent"><strong><em>Prepare Meals.</em></strong> As part of a short rest, you can prepare a nutritious meal that helps your companions regain their strength. You and up to five creatures of your choice regain {{proficiency}} extra hit point per Hit Die spent during a short rest, provided you have access to your survival kit and sufficient food.</p>
+			<p class="indent"><strong><em>Collect herbs/condiments.</em></strong> You can spend one hour per day to regain 1d2 (1d4 halved, rounded up) of this kits charges (up to the maximum of 3).</p>
+		</description>
+		<sheet>
+			<description>You can cast Robinsons’ Snack as ritual by expending a charge of the survival kit</description>
+		</sheet>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="8">8 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_CALLA3_TUTORIALISLAND_TOOL_PROFICIENCY_SURVIVAL_KIT</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="survival kit:charges" value="3" />
+			<grant type="Spell" id="ID_CALLA3_TUTORIALISLAND_SPELL_ROBINSONS_SNACK" />
+		</rules>
+	</element>
+
+	<element name="Robinsons’ Snack" type="Spell" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_SPELL_ROBINSONS_SNACK">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<p>You prepare a nutritious snack. The snack takes 10 minutes to consume and disappears at the end of that time, and the beneficial effects don’t set in until this period is over.
+				Up to six creatures can partake of the snack. A creature that partakes of the snack gains several benefits. The creature is cured of all diseases and poison and becomes immune to poison. Its hit point maximum also increases by 1d6, and it gains the same number of hit points. These benefits last for 4 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">temporary,hitpoints,heal</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Ingredients worth at least 5 sp which the spell consumes and a Survival Kit</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Tool Proficiency (Survival Kit)" type="Proficiency" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_TOOL_PROFICIENCY_SURVIVAL_KIT">
+		<supports>Tool, Artisan tools</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_CALLA3_TUTORIALISLAND_MAGIC_ITEM_SURVIVAL_KIT" />
+			</div>
+		</description>
+	</element>
+</elements>

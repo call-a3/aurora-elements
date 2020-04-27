@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="backgrounds-mysterious-appearance.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/backgrounds/mysterious-appearance.xml" />
+		</update>
+	</info>
+
+	<element name="Mysterious Appearance" type="Background" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_BACKGROUND_APPEARED">
+		<description>
+			<p>You suddenly found yourself in the middle of the wilderness, without any recollection of how you got there. You wandered around for days, scarcely finding food, shelter or safe places to sleep. Eventually you wandered into contact with the civilized world and were introduced into the culture and habits of the island residents.</p>
+			<p class="indent">When you choose this background, determine whether you start the campaign as newly appeared in the wilderness, or wether you appeared in the wilderness some time ago and in the mean time have spent some time on the island.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Intimidation, Survival</li>
+				<li><strong>Equipment:</strong> A set of common clothes</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Survival, Animal Handling / Nature / Medicine / Intimidation / Stealth</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<select type="Proficiency" name="Skill Proficiency (Mysterious Appearance)" supports="ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+</elements>

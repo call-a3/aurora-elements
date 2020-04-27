@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="deities.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/misc/deities.xml" />
+		</update>
+	</info>
+
+	<element name="Ioistohuluus" type="Deity" source="Player’s Handbook" id="ID_CALLA3_TUTORIALISLAND_DEITY_IOISTOHULUUS">
+		<description>
+			<p class="flavor">creator of the island and all things</p>
+		</description>
+		<setters>
+			<set name="setting">Tutorial Island</set>
+			<set name="alignment">LG</set>
+			<set name="domains">All</set>
+			<set name="symbol">Oil lantern</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>creator of the island and all things</description>
+		</sheet>
+	</element>
+</elements>

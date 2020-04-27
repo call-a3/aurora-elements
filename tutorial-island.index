@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Tutorial Island</name>
+		<description>Content for the campaign setting Tutorial Island</description>
+		<author url="https://www.adriaan.me">Adriaan Callaerts</author>
+		<update version="0.1.0">
+			<file name="tutorial-island.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/source.xml" />
+		<file name="backgrounds-island-native.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/backgrounds/island-native.xml" />
+		<file name="backgrounds-mysterious-appearance.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/backgrounds/mysterious-appearance.xml" />
+		<file name="items-glass-of-inspection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/glass-of-inspection.xml" />
+		<file name="items-orators-tome.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/orators-tome.xml" />
+		<file name="items-survival-kit.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/survival-kit.xml" />
+		<file name="items-weapon-of-kinsfolk.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/weapon-of-kinsfolk.xml" />
+		<file name="deities.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/misc/deities.xml" />
+	</files>
+</index>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/core-addendums/source.xml" />
+		</update>
+	</info>
+    
+	<element name="Core Addendums" type="Source" source="Core" id="ID_CALLA3_COREADDENDUMS_SOURCE_COREADDENDUMS">
+		<description>
+			<![CDATA[<p>Additional content from the core rulebooks.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">COADDS</set>
+			<set name="url">https://github.com/call-a3/aurora-elements/tree/master/core-addendums</set>
+			<set name="author" abbreviation="CALLA3" url="https://www.adriaan.me">Adriaan Callaerts</set>
+			<set name="official">false</set>
+			<set name="core">true</set>
+			<set name="release">20200427</set>
+		</setters>
+	</element>
+</elements>

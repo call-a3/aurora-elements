@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/source.xml" />
+		</update>
+	</info>
+    
+	<element name="Tutorial Island" type="Source" source="Core" id="ID_CALLA3_TUTORIALISLAND_SOURCE_TUTORIALISLAND">
+		<description>
+			<![CDATA[<p><strong>Welcome to Tutorial Island.</strong></p><p>Tutorial Island is a setting in which new players can discover D&D</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">TUTISLE</set>
+			<set name="url">https://github.com/call-a3/aurora-elements/tree/master/tutorial-island</set>
+			<set name="image">https://cdn.pixabay.com/photo/2017/05/08/22/13/mountain-2296730_960_720.jpg</set>
+			<set name="author" abbreviation="CALLA3" url="https://www.adriaan.me">Adriaan Callaerts</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20200417</set>
+		</setters>
+	</element>
+</elements>

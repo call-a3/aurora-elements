@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="backgrounds-island-native.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/backgrounds/island-native.xml" />
+		</update>
+	</info>
+
+	<element name="Island Native" type="Background" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_BACKGROUND_NATIVE">
+		<description>
+			<p>You were born on the island and grew up there your whole life. You are familiar with anyone who lives in the settlement at the beach and its customs, social structure, ...</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>two of your choice</li>
+				<li><strong>Equipment:</strong>An adventurers pack, a set of common clothes</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">2 skill proficiencies</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Island Native)" supports="Skill" number="2" />
+		</rules>
+	</element>
+</elements>
