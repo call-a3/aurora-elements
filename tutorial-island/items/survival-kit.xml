@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
-			<file name="items-weapon-of-kinsfolk.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/weapon-of-kinsfolk.xml" />
+		<update version="0.1.1">
+			<file name="items-survival-kit.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/survival-kit.xml" />
 		</update>
 	</info>
 
