@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="items-survival-kit.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/survival-kit.xml" />
 		</update>
 	</info>
@@ -16,7 +16,7 @@
 			<p class="indent"><strong><em>Components.</em></strong> Survivalists’ utensils include a nut cracker, coconut opener, a small mortar and pestle and a herb &amp; condiments pouch.</p>
 			<p class="indent"><strong><em>Medicine.</em></strong> When treating the wounded, you know just the right herbs and natural essences to use. You are proficient in any medicine checks that involve using natural components to treat someone.</p>
 			<p class="indent"><strong><em>Survival.</em></strong> When foraging for food or water, you can make do with ingredients you scavenge that others would be unable to transform into nourishing meals.</p>
-			<p class="indent"><strong><em>Prepare Meals.</em></strong> As part of a short rest, you can prepare a nutritious meal that helps your companions regain their strength. You and up to five creatures of your choice regain {{proficiency}} extra hit point per Hit Die spent during a short rest, provided you have access to your survival kit and sufficient food.</p>
+			<p class="indent"><strong><em>Prepare Meals.</em></strong> As part of a short rest, you can prepare a nutritious meal that helps your companions regain their strength. You and up to five creatures of your choice regain an amount of hit points equal to your proficiency bonus per Hit Die spent during a short rest, provided you have access to your survival kit and sufficient food.</p>
 			<p class="indent"><strong><em>Collect herbs/condiments.</em></strong> You can spend one hour per day to regain 1d2 (1d4 halved, rounded up) of this kits charges (up to the maximum of 3).</p>
 		</description>
 		<sheet>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="items-lethifold-chain-mail.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/lethifold-chain-mail.xml" />
+		</update>
+	</info>
+
+	<element name="Lethifold Chain Mail" type="Armor" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_ARMOR_HEAVY_LETHIFOLD_CHAIN_MAIL">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p>Made of interlocking metal rings, lethifold chain mail includes a layer of lethifold fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets. The lethifold fabric muffles the sounds of the metal parts hitting each other, making this armor more silent than regular chain mail.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">175</set>
+			<set name="weight" lb="60">60 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+			<set name="strength">13</set>
+			<set name="armorClass">16</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_MAIL</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:armor" value="16" />
+			<stat name="speed" value="-10" bonus="armor" requirements="![str:13]" />
+		</rules>
+	</element>
+</elements>
