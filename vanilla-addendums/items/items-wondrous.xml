@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Wondrous Items</name>
+        <update version="0.1.0">
+            <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/items/items-wondrous.xml" />
+        </update>
+    </info>
+    <element name="Necklace of Meditation Beads" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_NECKLACE_OF_MEDITATION_BEADS">
+        <description>
+            <p>This necklace has 1d4 + 2 magic beads made from aquamarine, black pearl, or topaz. It also has many nonmagical beads made from stones such as amber, bloodstone, citrine, coral, jade, pearl, or quartz. If a magic bead is removed from the necklace, that bead loses its magic.</p>
+            <p class="indent">Six types of magic beads exist. The GM decides the type of each bead on the necklace or determines it randomly. A necklace can have more than one bead of the same type. To use one, you must be wearing the necklace. Each bead contains a spell that you can cast from it as a bonus action (using your spell save DC if a save is necessary). Once a magic bead's spell is cast, that bead can't be used again until the next dawn.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <td>d20</td>
+                        <td>Bead of ...</td>
+                        <td>Spell</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1-6</td>
+                        <td>Blessing</td>
+                        <td>
+                            <em>Bless</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7-12</td>
+                        <td>Curing</td>
+                        <td>
+                            <em>Cure wounds</em>
+                            (2nd level) or
+                            <em>lesser restoration</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13-16</td>
+                        <td>Favor</td>
+                        <td>
+                            <em>Greater restoration</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17-18</td>
+                        <td>Smiting</td>
+                        <td>
+                            <em>Branding smite</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Summons</td>
+                        <td>
+                            <em>Planar ally</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Wind walking</td>
+                        <td>
+                            <em>Wind walk</em>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </description>
+        <setters>
+            <set name="keywords">monk</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">neck</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement" addition="by a monk">true</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Bead of Blessing" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_BLESSING">
+        <description>
+            <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
+            <p>This bead contains the <em>Bless</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">monk, cleric, druid, or paladin</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">necklace</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">false</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BLESS" />
+        </rules>
+    </element>
+    <element name="Bead of Curing" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_CURING">
+        <description>
+            <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
+            <p>This bead contains the <em>Cure wounds</em> (2nd level) and <em>Lesser Restoration</em> spells, one of which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">monk, cleric, druid, or paladin</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">necklace</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">false</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" />
+        </rules>
+    </element>
+    <element name="Bead of Favor" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_FAVOR">
+        <description>
+            <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
+            <p>This bead contains the <em>Greater Restoration</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">monk, cleric, druid, or paladin</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">necklace</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">false</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" />
+        </rules>
+    </element>
+    <element name="Bead of Smiting" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_SMITING">
+        <description>
+            <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
+            <p>This bead contains the <em>Branding Smite</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">monk, cleric, druid, or paladin</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">necklace</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">false</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" />
+        </rules>
+    </element>
+    <element name="Bead of Summons" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_BLESSING">
+        <description>
+            <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
+            <p>This bead contains the <em>Planar Ally</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">monk, cleric, druid, or paladin</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">necklace</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">false</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PLANAR_ALLY" />
+        </rules>
+    </element>
+    <element name="Bead of Wind Walking" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_BLESSING">
+        <description>
+            <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
+            <p>This bead contains the <em>Wind Walk</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">monk, cleric, druid, or paladin</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">necklace</set>
+            <set name="type">Wondrous Item</set>
+            <set name="attunement">false</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_WIND_WALK" />
+        </rules>
+    </element>
+</elements>

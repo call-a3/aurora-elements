@@ -13,6 +13,7 @@ More information about extending the content can be found [here](http://aurorabu
 
 - https://raw.githubusercontent.com/call-a3/aurora-elements/master/core-addendums.index **required**
 - https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island.index
+- https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums.index
 
 ## Reporting issues or requesting more content
 You can request content by creating an issue in the [github repository](https://github.com/call-a3/aurora-elements/issues "Issues for Aurora Elements").

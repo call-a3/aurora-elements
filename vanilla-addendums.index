@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Vanilla Addendums</name>
+		<description>Additional content that is generic and probably fits in any setting.</description>
+		<author url="https://www.adriaan.me">Adriaan Callaerts</author>
+		<update version="0.1.0">
+			<file name="vanilla-addendums.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/source.xml" />
+		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/items/items-wondrous.xml" />
+	</files>
+</index>

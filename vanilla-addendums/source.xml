@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/source.xml" />
+		</update>
+	</info>
+    
+	<element name="Vanilla Addendums" type="Source" source="Core" id="ID_CALLA3_VANILLAADDENDUMS_SOURCE_VANILLAADDENDUMS">
+		<description>
+			<![CDATA[<p>Additional content that is generic and probably fits in any setting.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">VAADDS</set>
+			<set name="url">https://github.com/call-a3/aurora-elements/tree/master/vanilla-additions</set>
+			<set name="author" abbreviation="CALLA3" url="https://www.adriaan.me">Adriaan Callaerts</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20201019</set>
+		</setters>
+	</element>
+</elements>
