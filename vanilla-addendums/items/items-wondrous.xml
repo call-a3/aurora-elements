@@ -2,14 +2,14 @@
 <elements>
     <info>
         <name>Wondrous Items</name>
-        <update version="0.1.0">
+        <update version="0.1.1">
             <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/items/items-wondrous.xml" />
         </update>
     </info>
     <element name="Necklace of Meditation Beads" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_NECKLACE_OF_MEDITATION_BEADS">
         <description>
-            <p>This necklace has 1d4 + 2 magic beads made from aquamarine, black pearl, or topaz. It also has many nonmagical beads made from stones such as amber, bloodstone, citrine, coral, jade, pearl, or quartz. If a magic bead is removed from the necklace, that bead loses its magic.</p>
-            <p class="indent">Six types of magic beads exist. The GM decides the type of each bead on the necklace or determines it randomly. A necklace can have more than one bead of the same type. To use one, you must be wearing the necklace. Each bead contains a spell that you can cast from it as a bonus action (using your spell save DC if a save is necessary). Once a magic bead's spell is cast, that bead can't be used again until the next dawn.</p>
+            <p>This necklace has 1d4 + 2 magic beads made from obsidian, volcanic glass, or amethyst. It also has many nonmagical beads made from wood such as oak, ash, elder, beech, fir, birch, or elder. If a magic bead is removed from the necklace, that bead loses its magic.</p>
+            <p class="indent">Multiple types of magic beads exist. The GM decides the type of each bead on the necklace or determines it randomly. A necklace can have more than one bead of the same type. To use one, you must be wearing the necklace. Each bead contains a spell that you can cast from it as a bonus action (using Wisdom as your spellcasting ability and using your Ki DC as the save DC if a save is necessary). Once a magic bead's spell is cast, that bead can't be used again until the next dawn.</p>
             <table>
                 <thead>
                     <tr>
@@ -66,6 +66,9 @@
                 </tbody>
             </table>
         </description>
+        <sheet action="Bonus Action" usage="1d4+2/Dawn">
+            <description>Cast a spell from one of the magic beads on this necklace.</description>
+        </sheet>
         <setters>
             <set name="keywords">monk</set>
             <set name="category">Wondrous Items</set>
@@ -154,7 +157,7 @@
             <grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" />
         </rules>
     </element>
-    <element name="Bead of Summons" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_BLESSING">
+    <element name="Bead of Summons" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_SUMMONS">
         <description>
             <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
             <p>This bead contains the <em>Planar Ally</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
@@ -173,7 +176,7 @@
             <grant type="Spell" id="ID_PHB_SPELL_PLANAR_ALLY" />
         </rules>
     </element>
-    <element name="Bead of Wind Walking" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_BLESSING">
+    <element name="Bead of Wind Walking" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_WINDWALKING">
         <description>
             <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
             <p>This bead contains the <em>Wind Walk</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
