@@ -12,7 +12,7 @@
 		</description>
 		<setters>
 			<set name="abbreviation">VAADDS</set>
-			<set name="url">https://github.com/call-a3/aurora-elements/tree/master/vanilla-additions</set>
+			<set name="url">https://github.com/call-a3/aurora-elements/tree/master/vanilla-addendums</set>
 			<set name="author" abbreviation="CALLA3" url="https://www.adriaan.me">Adriaan Callaerts</set>
 			<set name="official">false</set>
 			<set name="core">false</set>

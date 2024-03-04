@@ -10,6 +10,7 @@
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/source.xml" />
+		<file name="items-musical-instruments.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/items/items-musical-instruments.xml" />
 		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/items/items-wondrous.xml" />
 	</files>
 </index>
