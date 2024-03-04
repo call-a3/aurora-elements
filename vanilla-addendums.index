@@ -4,7 +4,7 @@
 		<name>Vanilla Addendums</name>
 		<description>Additional content that is generic and probably fits in any setting.</description>
 		<author url="https://www.adriaan.me">Adriaan Callaerts</author>
-		<update version="0.1.0">
+		<update version="0.2.0">
 			<file name="vanilla-addendums.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums.index" />
 		</update>
 	</info>
