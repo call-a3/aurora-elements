@@ -7,7 +7,7 @@
         </update>
     </info>
     <element name="Bodhrán" type="Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MUSICAL_INSTRUMENT_BODHRAN">
-        <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+        <supports>Musical Instrument</supports>
         <description>
         <p>If you have proficiency with the Bodhrán, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
         </description>
@@ -21,7 +21,7 @@
         </setters>
     </element>
     <element name="Taps" type="Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MUSICAL_INSTRUMENT_TAPS">
-        <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+        <supports>Musical Instrument</supports>
         <description>
         <p>Taps are thin metal plates attached to shoes (or other footwear) to create percusives sounds when tapping them, typically associated with a style of dancing called tap dancing.
          If you have proficiency with the taps, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
