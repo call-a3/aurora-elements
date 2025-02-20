@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Weapons</name>
-		<update version="0.3.0">
+		<update version="0.3.1">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/items/items-weapons.xml" />
 		</update>
 	</info>
 	
-	<element name="Thunder Gauntlet" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_THUNDER_GAUNTLET">
+	<element name="Thunder Gauntlet" type="Weapon" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_WEAPON_THUNDER_GAUNTLET">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_THUNDER</supports>
 		<description>
 			<p>Each of the armor's gauntlets counts as a simple melee weapon while you aren't holding anything in it, and it deals 1d8 thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else.</p>
@@ -18,6 +18,21 @@
 			<set name="weight" lb="0"></set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="thunder">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GAUNTLET</set>
+		</setters>
+	</element>
+	<element name="Lightning Launcher" type="Weapon" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_WEAPON_THUNDER_GAUNTLET">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING</supports>
+		<description>
+			<p>A gemlike node appears on one of your armored fists or on the chest (your choice). It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals 1d6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra 1d6 lightning damage to that target.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0"></set>
+			<set name="slot">onehand</set>
+			<set name="range">90/300</set>
+			<set name="damage" type="lightning">1d6</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GAUNTLET</set>
 		</setters>
 	</element>
