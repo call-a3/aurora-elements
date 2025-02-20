@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons</name>
-		<update version="0.3.1">
+		<update version="0.3.2">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -18,10 +18,10 @@
 			<set name="weight" lb="0"></set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="thunder">1d8</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GAUNTLET</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATCLUB</set>
 		</setters>
 	</element>
-	<element name="Lightning Launcher" type="Weapon" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_WEAPON_THUNDER_GAUNTLET">
+	<element name="Lightning Launcher" type="Weapon" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_WEAPON_LIGHTNING_LAUNCHER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING</supports>
 		<description>
 			<p>A gemlike node appears on one of your armored fists or on the chest (your choice). It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals 1d6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra 1d6 lightning damage to that target.</p>
@@ -33,7 +33,7 @@
 			<set name="slot">onehand</set>
 			<set name="range">90/300</set>
 			<set name="damage" type="lightning">1d6</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GAUNTLET</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN</set>
 		</setters>
 	</element>
 </elements>
