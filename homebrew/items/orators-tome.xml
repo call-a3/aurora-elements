@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
-			<file name="items-orators-tome.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/orators-tome.xml" />
+		<update version="1.0.0">
+			<file name="item-orators-tome.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/orators-tome.xml" />
 		</update>
 	</info>
 
-	<element name="Orators Tome" type="Magic Item" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_MAGIC_ITEM_ORATORS_TOME">
+	<element name="Orators Tome" type="Magic Item" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_MAGIC_ITEM_ORATORS_TOME">
 		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
 		<description>
 			<p class="flavor">This leather-bound tome contains a collection of stories, poems, speeches, ... which can be historic but also inspirational in nature.</p>

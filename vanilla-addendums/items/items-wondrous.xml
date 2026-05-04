@@ -2,14 +2,14 @@
 <elements>
     <info>
         <name>Wondrous Items</name>
-        <update version="0.1.1">
+        <update version="1.0.0">
             <file name="items-wondrous.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/items/items-wondrous.xml" />
         </update>
     </info>
     <element name="Necklace of Meditation Beads" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_NECKLACE_OF_MEDITATION_BEADS">
         <description>
             <p>This necklace has 1d4 + 2 magic beads made from obsidian, volcanic glass, or amethyst. It also has many nonmagical beads made from wood such as oak, ash, elder, beech, fir, birch, or elder. If a magic bead is removed from the necklace, that bead loses its magic.</p>
-            <p class="indent">Multiple types of magic beads exist. The GM decides the type of each bead on the necklace or determines it randomly. A necklace can have more than one bead of the same type. To use one, you must be wearing the necklace. Each bead contains a spell that you can cast from it as a bonus action (using Wisdom as your spellcasting ability and using your Ki DC as the save DC if a save is necessary). Once a magic bead's spell is cast, that bead can't be used again until the next dawn.</p>
+            <p class="indent">Multiple types of magic beads exist. The GM decides the type of each bead on the necklace or determines it randomly. A necklace can have more than one bead of the same type. To use one, you must be wearing the necklace. Each bead contains a spell that you can cast from it as a bonus action (using Wisdom as your spellcasting ability and using your Ki DC as the save DC if a save is necessary). Once a magic bead’s spell is cast, that bead can’t be used again until the next dawn.</p>
             <table>
                 <thead>
                     <tr>
@@ -83,7 +83,7 @@
     <element name="Bead of Blessing" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_BLESSING">
         <description>
             <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
-            <p>This bead contains the <em>Bless</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+            <p>This bead contains the <em>Bless</em> spell which you can cast from it as a bonus action. Once the magic bead’s spell is cast, this bead can’t be used again until the next dawn.</p>
         </description>
         <setters>
             <set name="keywords">monk, cleric, druid, or paladin</set>
@@ -102,7 +102,7 @@
     <element name="Bead of Curing" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_CURING">
         <description>
             <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
-            <p>This bead contains the <em>Cure wounds</em> (2nd level) and <em>Lesser Restoration</em> spells, one of which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+            <p>This bead contains the <em>Cure wounds</em> (2nd level) and <em>Lesser Restoration</em> spells, one of which you can cast from it as a bonus action. Once the magic bead’s spell is cast, this bead can’t be used again until the next dawn.</p>
         </description>
         <setters>
             <set name="keywords">monk, cleric, druid, or paladin</set>
@@ -122,7 +122,7 @@
     <element name="Bead of Favor" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_FAVOR">
         <description>
             <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
-            <p>This bead contains the <em>Greater Restoration</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+            <p>This bead contains the <em>Greater Restoration</em> spell which you can cast from it as a bonus action. Once the magic bead’s spell is cast, this bead can’t be used again until the next dawn.</p>
         </description>
         <setters>
             <set name="keywords">monk, cleric, druid, or paladin</set>
@@ -141,7 +141,7 @@
     <element name="Bead of Smiting" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_SMITING">
         <description>
             <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
-            <p>This bead contains the <em>Branding Smite</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+            <p>This bead contains the <em>Branding Smite</em> spell which you can cast from it as a bonus action. Once the magic bead’s spell is cast, this bead can’t be used again until the next dawn.</p>
         </description>
         <setters>
             <set name="keywords">monk, cleric, druid, or paladin</set>
@@ -160,7 +160,7 @@
     <element name="Bead of Summons" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_SUMMONS">
         <description>
             <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
-            <p>This bead contains the <em>Planar Ally</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+            <p>This bead contains the <em>Planar Ally</em> spell which you can cast from it as a bonus action. Once the magic bead’s spell is cast, this bead can’t be used again until the next dawn.</p>
         </description>
         <setters>
             <set name="keywords">monk, cleric, druid, or paladin</set>
@@ -179,7 +179,7 @@
     <element name="Bead of Wind Walking" type="Magic Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MAGIC_ITEM_BEAD_OF_WINDWALKING">
         <description>
             <p>A magical bead that can be part of a Necklace of Prayer Beads or a Necklace of Meditation Beads.</p>
-            <p>This bead contains the <em>Wind Walk</em> spell which you can cast from it as a bonus action. Once the magic bead's spell is cast, this bead can't be used again until the next dawn.</p>
+            <p>This bead contains the <em>Wind Walk</em> spell which you can cast from it as a bonus action. Once the magic bead’s spell is cast, this bead can’t be used again until the next dawn.</p>
         </description>
         <setters>
             <set name="keywords">monk, cleric, druid, or paladin</set>

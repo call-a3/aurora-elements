@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>Musical Instruments</name>
-        <update version="0.1.1">
+        <update version="1.0.0">
             <file name="items-musical-instruments.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/items/items-musical-instruments.xml" />
         </update>
     </info>
@@ -23,7 +23,7 @@
     <element name="Taps" type="Item" source="Vanilla Addendums" id="ID_CALLA3_VANILLAADDENDUMS_MUSICAL_INSTRUMENT_TAPS">
         <supports>Musical Instrument</supports>
         <description>
-        <p>Taps are thin metal plates attached to shoes (or other footwear) to create percusives sounds when tapping them, typically associated with a style of dancing called tap dancing.
+        <p>Taps are wood or metal plates attached to shoes (or other footwear) to create percusives sounds when tapping them, typically associated with a style of dancing called tap dancing.
          If you have proficiency with the taps, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
         </description>
         <setters>

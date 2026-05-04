@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
-			<file name="items-glass-of-inspection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/glass-of-inspection.xml" />
+		<update version="1.0.0">
+			<file name="item-glass-of-inspection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/glass-of-inspection.xml" />
 		</update>
 	</info>
 
-	<element name="Glass of Inspection" type="Magic Item" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_MAGIC_ITEM_GLASS_OF_INSPECTION">
+	<element name="Glass of Inspection" type="Magic Item" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_MAGIC_ITEM_GLASS_OF_INSPECTION">
 		<description>
 			<p>A (pair of) glass lens(es) which magnify and expose magical properties. They might be set into a frame to be worn or held. 
 			A glass of inspection grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed.

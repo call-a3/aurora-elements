@@ -11,8 +11,12 @@ Go to the _Additional Content_ tab in Aurora, enter the URL of the index file, a
 <br>
 More information about extending the content can be found [here](http://aurorabuilder.com/content/ "Additional Content").
 
+You can add all content at once by adding the following URL: https://raw.githubusercontent.com/call-a3/aurora-elements/master/call-a3.index 
+
+Or you can add only specific parts by adding one or multiple of the following:
+
 - https://raw.githubusercontent.com/call-a3/aurora-elements/master/core-addendums.index **required**
-- https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island.index
+- https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew.index
 - https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums.index
 
 ## Reporting issues or requesting more content

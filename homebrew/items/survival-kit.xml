@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.3">
-			<file name="items-survival-kit.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/survival-kit.xml" />
+		<update version="1.0.0">
+			<file name="item-survival-kit.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/tutorial-island/items/survival-kit.xml" />
 		</update>
 	</info>
 
-	<element name="Survival Kit" type="Item" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_MAGIC_ITEM_SURVIVAL_KIT">
+	<element name="Survival Kit" type="Item" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_MAGIC_ITEM_SURVIVAL_KIT">
 		<description>
 			<p class="flavor">Surviving in the wild is a tough chore. With a survival kit along for the journey, you will notice that you always seem to find the right plants, herbs and natural aids to make due in dire circumstances.</p>
 			<p>This kit has 3 charges. You learn to prepare nutritious snacks, casting Robinsons’ Snack as a ritual by expending one charge (in addition to the regular components of the spell).
-			<div element="ID_CALLA3_TUTORIALISLAND_SPELL_ROBINSONS_SNACK"></div>
+			<div element="ID_CALLA3_HOMEBREW_SPELL_ROBINSONS_SNACK"></div>
 			In addition, the kit has the following properties:
 			</p>
 			<p class="indent"><strong><em>Components.</em></strong> A Survival Kit include a nut cracker, coconut opener, a small sickle, a small mortar and pestle and a herb &amp; condiments pouch.</p>
@@ -27,16 +27,16 @@
 			<set name="cost" currency="gp">1</set>
 			<set name="weight" lb="8">8 lbs.</set>
 			<set name="type">Tool</set>
-			<set name="proficiency">ID_CALLA3_TUTORIALISLAND_TOOL_PROFICIENCY_SURVIVAL_KIT</set>
+			<set name="proficiency">ID_CALLA3_HOMEBREW_TOOL_PROFICIENCY_SURVIVAL_KIT</set>
 			<set name="slot">misc</set>
 		</setters>
 		<rules>
 			<stat name="survival kit:charges" value="3" />
-			<grant type="Spell" id="ID_CALLA3_TUTORIALISLAND_SPELL_ROBINSONS_SNACK" />
+			<grant type="Spell" id="ID_CALLA3_HOMEBREW_SPELL_ROBINSONS_SNACK" />
 		</rules>
 	</element>
 
-	<element name="Robinsons’ Snack" type="Spell" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_SPELL_ROBINSONS_SNACK">
+	<element name="Robinsons’ Snack" type="Spell" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SPELL_ROBINSONS_SNACK">
 		<supports>Druid, Ranger</supports>
 		<description>
 			<p>You prepare a nutritious snack. The snack takes 10 minutes to consume and the beneficial effects of the snack don’t set in until this period is over.
@@ -61,11 +61,11 @@
 		</setters>
 	</element>
 
-	<element name="Tool Proficiency (Survival Kit)" type="Proficiency" source="Tutorial Island" id="ID_CALLA3_TUTORIALISLAND_TOOL_PROFICIENCY_SURVIVAL_KIT">
+	<element name="Tool Proficiency (Survival Kit)" type="Proficiency" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_TOOL_PROFICIENCY_SURVIVAL_KIT">
 		<supports>Tool, Artisan tools</supports>
 		<description>
 			<div class="reference">
-				<div element="ID_CALLA3_TUTORIALISLAND_MAGIC_ITEM_SURVIVAL_KIT" />
+				<div element="ID_CALLA3_HOMEBREW_MAGIC_ITEM_SURVIVAL_KIT" />
 			</div>
 		</description>
 	</element>

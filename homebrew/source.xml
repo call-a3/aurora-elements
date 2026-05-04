@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="1.0.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/source.xml" />
+		</update>
+	</info>
+    
+	<element name="Adriaan Callaerts’ Homebrew" type="Source" source="Core" id="ID_CALLA3_HOMEBREW_SOURCE_HOMEBREW">
+		<description>
+			<![CDATA[<p><strong>Adriaan Callaerts’ Homebrew.</strong></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">CA3HBRW</set>
+			<set name="url">https://github.com/call-a3/aurora-elements/tree/master/homebrew</set>
+			<set name="image">https://www.dndbeyond.com/attachments/thumbnails/8/113/850/545/315602_cn_wmask.png</set>
+			<set name="author" abbreviation="CALLA3" url="https://www.adriaan.me">Adriaan Callaerts</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20260327</set>
+		</setters>
+	</element>
+</elements>

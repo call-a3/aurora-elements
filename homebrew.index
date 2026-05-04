@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Homebrew</name>
+		<description>Content developed by Adriaan Callaerts</description>
+		<author url="https://www.adriaan.me">Adriaan Callaerts</author>
+		<update version="0.1.0">
+			<file name="homebrew.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/source.xml" />
+		<file name="archetype-paladin-connection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/archetypes/paladin/connection.xml" />
+		<file name="class-untrained.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/classes/untrained.xml" />
+		<file name="item-glass-of-inspection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/items/glass-of-inspection.xml" />
+		<file name="item-lethifold-chain-mail.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/items/lethifold-chain-mail.xml" />
+		<file name="item-orators-tome.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/items/orators-tome.xml" />
+		<file name="item-survival-kit.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/items/survival-kit.xml" />
+		<file name="item-weapon-of-kinsfolk.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/items/weapon-of-kinsfolk.xml" />
+		<file name="race-kesho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kesho.xml" />
+	</files>
+</index>

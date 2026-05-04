@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>call-a3</name>
+		<description>Content curated by Adriaan Callaerts</description>
+		<author url="https://www.adriaan.me">Adriaan Callaerts</author>
+		<update version="1.0.0">
+			<file name="call-a3.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/call-a3.index" />
+		</update>
+	</info>
+	<files>
+		<file name="core-addendums.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/core-addendums.index" />
+		<file name="vanilla-addendums.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums.index" />
+		<file name="homebrew.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew.index" />
+	</files>
+</index>

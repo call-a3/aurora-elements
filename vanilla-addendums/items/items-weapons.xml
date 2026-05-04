@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons</name>
-		<update version="0.3.2">
+		<update version="1.0.0">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/vanilla-addendums/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -10,7 +10,7 @@
 	<element name="Thunder Gauntlet" type="Weapon" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_WEAPON_THUNDER_GAUNTLET">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_THUNDER</supports>
 		<description>
-			<p>Each of the armor's gauntlets counts as a simple melee weapon while you aren't holding anything in it, and it deals 1d8 thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else.</p>
+			<p>Each of the armor’s gauntlets counts as a simple melee weapon while you aren’t holding anything in it, and it deals 1d8 thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else.</p>
 		</description>
 		<setters>
 			<set name="category">Weapons</set>

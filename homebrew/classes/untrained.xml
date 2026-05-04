@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="class-untrained.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/classes/untrained.xml" />
+		</update>
+	</info>
+
+	<element name="Untrained" type="Class" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_CLASS_UNTRAINED">
+		<description>
+			<p>You are an untrained individual with no formal combat training.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>Untrained, you gain the following class features.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d4 per level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 4 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d4 (or 3) + your Constitution modifier per level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> None</li>
+				<li><strong>Weapons:</strong> None</li>
+				<li><strong>Tools:</strong> None</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> None</li>
+				<li><strong>Skills:</strong> None</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with no equipment, except for the equipment granted by your background</p>
+		</description>
+		<sheet display="false">
+			<description>An untrained individual with no formal combat training.</description>
+		</sheet>
+		<setters>
+			<set name="short">An untrained individual with no formal combat training.</set>
+			<set name="hd">d4</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="archetype-paladin-connection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/archetypes/paladin/connection.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Connection" type="Archetype" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_PALADIN_OATH_OF_CONNECTION">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of Connection binds a paladin to the belief that every creature carries within it the capacity for understanding, change, and peace. These paladins walk into conflict not as judges or executioners, but as witnesses, mediators, and protectors. They believe that violence rarely resolves the true cause of suffering, and that most harm arises from unmet needs, fear, or misunderstanding.</p>
+			<p>Paladins of this oath cultivate a deep presence. They listen as fiercely as others fight. When they must use force, it is only to protect life or preserve the possibility of dialogue. Their true weapon is not the blade, but the space they create for others to choose differently.</p>
+			<h5 class="caption">TENETS OF CONNECTION</h5>
+			<p>The tenets of the Oath of Connection invite a paladin to be loving towards itself and others.</p>
+			<p class="indent"><strong><em>Empathy.</em></strong> No creature sets out to do harm for harm’s sake. They only ever attempt to fulfill their needs, which is not inherently good nor evil. In order to resolve conflict, we must first have empathy and understanding for our own needs and the needs of the other.</p>
+			<p class="indent"><strong><em>Patience.</em></strong> Change takes time. Ingrained patterns and beliefs cannot be undone in a moment. We can allow ourselves and others time and space to grow.</p>
+			<p class="indent"><strong><em>Choice.</em></strong> We can’t always control our circumstances, but we always have a choice about how we act. Not (consciously) choosing is still a choice. Every choice has a consequence. Choices themselves are neutral, we only assign meaning to them based on our perception of their consequences.</p>
+			<p class="indent"><strong><em>Non-violence.</em></strong> A conflict can almost always be resolved peacefully. However, when a party is unwilling to engage in dialogue or when in the face of acute danger, forceful intervention might be necessary. The goal of forceful intervention is only ever to protect, never to punish.</p>
+			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_OATH_SPELLS" />
+			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_DIVINE_CONNECTION" />
+			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_CHANNEL_DIVINITY" />
+			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_PROTECTION" />
+			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_DEESCALATION" />
+			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_PERSISTENT_ENDURANCE" />
+			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_BURDEN_OF_WITNESS" />
+			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AVATAR_OF_CONNECTION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_DIVINE_CONNECTION" level="3" />
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_PROTECTION" level="6" />
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_DEESCALATION" level="7" />
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_PERSISTENT_ENDURANCE" level="11" />
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_BURDEN_OF_WITNESS" level="15" />
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AVATAR_OF_CONNECTION" level="20" />
+		</rules>
+	</element>
+	<element name="Divine Connection" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_DIVINE_CONNECTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_DIVINE_CONNECTION</requirements>
+		<description>
+			<p>When you take this oath at 3rd level, this ability replaces your Divine Smite ability.</p>
+			<p>When a creature you can see within 30ft makes an attack against a creature other than you, you can use your reaction and expend a spell slot to intervene.</p>
+			<p>The attacker must make a Charisma saving throw against your paladin spell save DC + the level of the spell slot spent. On a failure:</p>
+			<ul>
+				<li>The triggering attack automatically misses.</li>
+				<li>The attacker is unable to make another attack until the start of its next turn.</li>
+				<li>Until the end of its next turn, it has disadvantage on saving throws against being Charmed or Frightened.</li>
+			</ul>
+			<p>Additionally, you may speak a brief sentence that the creature understands (if you share a language), and the DM should allow that sentence to meaningfully influence NPC behaviour if appropriate.</p>
+			<p>On a success, the attack proceeds as normal, but you may reduce any damage caused by the attack by half.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see within 30ft makes an attack against a creature other than you, expend a spell slot to intervene. The attacker makes a Charisma saving throw against your paladin spell save DC + the level of the spell slot spent.
+			On a failure: the attack misses and until the start of its next turn, the attacker is unable to make another attack and has disadvantage on saves against being Charmed or Frightened. On a success, the attack succeeds but its damage is halved.</description>
+		</sheet>
+		<rules>
+			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SMITE" />
+		</rules>
+	</element>
+	<element name="Oath Spells" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_OATH_SPELLS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_OATH_SPELLS</requirements>
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5>OATH OF CONNECTION SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>heroism, sanctuary</em></td></tr>
+				<tr><td>5th</td><td><em>calm emotions, detect thoughts</em></td></tr>
+				<tr><td>9th</td><td><em>beacon of hope, counterspell</em></td></tr>
+				<tr><td>13th</td><td><em>aura of purity, otiluke’s resilient sphere</em></td></tr>
+				<tr><td>17th</td><td><em>dream, greater restoration</em></td></tr>
+			</table>	  
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_PURITY" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DREAM" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_CHANNEL_DIVINITY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_CHANNEL_DIVINITY</requirements>
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_CALL_FOR_PRESENCE"></div>
+			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_MIRROR_OF_INTENTION"></div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_CALL_FOR_PRESENCE" />
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_MIRROR_OF_INTENTION" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Call for Presence" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_CALL_FOR_PRESENCE">
+		<description>
+			<p>As an action, you present your holy symbol and speak calmly but firmly to invite all parties into a moment of awareness. Each creature of your choice within 30 feet that can hear you must make a Wisdom saving throw. On a failure, a creature is affected by Presence for 1 minute:</p>
+			<ul>
+				<li>The creature cannot take the Attack action.</li>
+				<li>The creature has disadvantage on Dexterity (Stealth) checks and on initiative rolls.</li>
+				<li>The creature can still move, speak, cast non-damaging spells, and take other actions.</li>
+				<li>You have advantage on Charisma (Persuasion) and Wisdom (Insight) checks against it.</li>
+			</ul>
+			<p class="indent">You can end this effect on your turn as part of any other action. If you fall unconscious, this effect ends. The effect also ends early on a creature if</p>
+			<ul>
+				<li>It takes damage, or</li>
+				<li>It is restrained, grappled, or otherwise forcibly controlled.</li>
+			</ul>
+		</description>
+		<sheet alt="Call for Presence" action="Action" usage="Channel Divinity">
+			<description>Each creature of your choice within 30ft must succeed a Wisdom saving throw or be affected by Presence for 1 minute or until it takes damage or is restrained, grappled or otherwise forcibly controlled.
+			While affected, the creature cannot take the attack action and has disadvantage on Dexterity (Stealth) checks and initiatve rolls. You have advantage on Charisma (Persuasion) and Wisdom (Insight) checks against it.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Mirror of Intention" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_MIRROR_OF_INTENTION">
+		<description>
+			<p class="indent"><b><i>Mirror of Intention.</i></b> You help a creature confront what is truly driving its actions. As a bonus action, choose one creature you can see within 30 feet. That creature must make a Charisma saving throw. On a failure, for 1 minute:</p>
+			<ul>
+				<li>The creature has disadvantage on attack rolls against any creature that has not harmed it.</li>
+				<li>The first time it targets a creature on each of its turns, it must succeed on a Wisdom saving throw or be forced to choose a different target or lose the attack.</li>
+			</ul>
+			<p class="indent">Additionally, you learn one of the following (DM chooses or rolls): one fear, one unmet desire, one significant emotional motivation or one internal conflict or doubt. You gain advantage on social checks related to the revealed information.</p>
+		</description>
+		<sheet alt="Mirror of Intention" action="Bonus Action" usage="Channel Divinity">
+			<description>Choose a creature that you can see within 30ft. It must succeed on a Charisma saving throw or have disadvantage on attack rolls against any creature that has not harmed it.</description>
+		</sheet>
+	</element>
+	<!-- <element name="Aura of Protection" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_PROTECTION">
+		<description>
+			<p>The bonus granted by Aura of Protection starting at 6th level does not apply to saving throws made against this Oath’s features.</p>
+		</description>
+		<sheet>
+			<description>Aura of Protection description... but exclude allies</description>
+		</sheet>
+		<rules>
+			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_PROTECTION" />
+		</rules>
+	</element> -->
+	<element name="Aura of Deescalation" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_AURA_OF_DEESCALATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DEVOTION_AURA_OF_DEESCALATION</requirements>
+		<description>
+			<p>Starting at 7th level, your mere presence discourages violence. You and any creatures within 10 feet of you gain the following benefits:</p>
+			<ul>
+				<li>When a creature in the aura deals damage to a creature that has not dealt damage since the start of its last turn, the damage is reduced by an amount equal to your proficiency bonus plus your Charisma modifier (minimum 1).</li>
+				<li>When a creature in the aura uses its action to attempt a social interaction (Persuasion, Deception, Insight, Intimidation, performance to calm, …) during combat, it gains advantage on that check.</li>
+				<li>When a creature within the aura is reduced to 0 hit points, it is stabilized instead of dying unless the attacker explicitly declares lethal intent.</li>
+			</ul>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>Anyone within {{aura of deescalation:range}}ft of you gains the following benefits:
+			reduce any damage to a creature that has not dealt damage since the start of its last turn by {{aura of deescalation:damage reduction}};
+			advantage on any social interaction when using their action to do it;
+			when reduced to 0 HP, they are stabilized instead of dying unless the attacker explicitly declares lethal intent.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of deescalation:damage reduction" value="proficiency" />
+			<stat name="aura of deescalation:damage reduction" value="charisma:modifier" />
+			<stat name="aura of deescalation:range" value="10" />
+			<stat name="aura of deescalation:range" value="30" level="18" />
+		</rules>
+	</element>
+	<element name="Persistent Endurance" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_PERSISTENT_ENDURANCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_PERSISTENT_ENDURANCE</requirements>
+		<description>
+			<p>Starting at 11th level, you are less affected by violence towards you. Any time you take damage from an attack or harmful spell, you can reduce the damage taken by 1d8.</p>
+			<p class="indent">This replaces your Improved Divine Smite ability.</p>
+		</description>
+		<sheet>
+			<description>Reduce any damage you receive from attacks by 1d8.</description>
+		</sheet>
+		<rules>
+			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_IMPROVED_DIVINE_SMITE" />
+		</rules>
+	</element>
+	<element name="Burden of Witness" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_PURITY_OF_SPIRIT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_BURDEN_OF_WITNESS</requirements>
+		<description>
+			<p>Beginning at 15th level, whenever a creature you can see within 30 feet deals damage to another creature, you can use your reaction to bear witness to the harm.</p>
+			<ul>
+				<li>The attacker takes psychic damage equal to your paladin level.</li>
+				<li>The attacker has disadvantage on its next attack roll.</li>
+				<li>The attacker cannot benefit from advantage on attack rolls until the end of its next turn.</li>
+			</ul>
+			<p class="indent">Additionally, you can no longer be Frightened or Charmed by creatures that have harmed a helpless or non-hostile creature within the last minute.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever a creature within 30ft deals damage to another creature</description>
+		</sheet>
+	</element>
+	<element name="Avatar of Connection" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_HOLY_NIMBUS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_AVATAR_OF_CONNECTION</requirements>
+		<description>
+			<p>At 20th level, you become an avatar of potential reconciliation. As an action, you undergo a transformation that lasts for 1 minute. You emit a palpable 30-foot radius aura of presence, calm and emotional gravity.</p>
+			<p class="indent">Hostile creatures in the aura have disadvantage on attack rolls.</p>
+			<p class="indent">Any creature that starts its turn in the aura must succeed on a Wisdom saving throw or be unable to take the Attack action that turn.</p>
+			<p class="indent">Creatures in the aura regain hit points equal to your Charisma modifier at the start of their turns if they have not dealt damage since the start of their last turn.</p>
+			<p class="indent">Additionally, you can, as a bonus action on your turn, force one creature in the aura that has dealt damage since the start of their last round to make a Charisma saving throw. On a failure, the creature is overcome with reflection and is Incapacitated until the end of its next turn.</p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>For one minute, within a 30 ft aura: hostile creatures have disadvantage on attack rolls, creatures that start their turn in the aura must succeed on a Wisdom saving throw or be unable to use the Attack action, creatures that start their turn in the aura regain {{cha:mod}} hitpoints if they have not dealt damage since the start of their last turn.</description>
+		</sheet>
+		<sheet action="Bonus Action" usage="Avatar of Connection">
+			<description>A creature in the aura that has dealt damage since the start of their last turn succeeds a Charisma saving throw or is Incapacitated until the end of its next turn.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Oath Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_OATH_SPELLS" />
+	<element name="Divine Connection Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_DIVINE_CONNECTION" />
+	<element name="Connection Channel Divinity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_CHANNEL_DIVINITY" />
+	<element name="Aura of Connection Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_AURA_OF_CONNECTION" />
+	<element name="Aura of Deescalation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DEVOTION_AURA_OF_DEESCALATION" />
+	<element name="Persistant Endurance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_PERSISTENT_ENDURANCE" />
+	<element name="Burden of Witness Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_BURDEN_OF_WITNESS" />
+	<element name="Avatar of Connection Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_AVATAR_OF_CONNECTION" />
+</elements>
