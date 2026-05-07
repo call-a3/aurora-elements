@@ -151,11 +151,11 @@
 		</description>
 		<sheet display="false"/>
 		<rules>
-			<select type="Sub Race" name="Kesshō Subrace" supports="Kesshō" />
+			<select type="Sub Race" name="Kesshō Subrace" supports="Kessho" />
 		</rules>
 	</element>
 	<element name="Mēkā" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_MEKA">
-		<supports>Kesshō</supports>
+		<supports>Kessho</supports>
 		<description>
 			<p>Mēkā are designed to participate in the early stages of Qurisutaru: to perform the alchemical processing and stonecutting that goes into designing, growing and polishing a body until it can be awakened into a new Kesshō.</p>
 			<p class="indent"><strong><em>Born Craftsperson.</em></strong> You gain proficiency with Jeweler’s Tools and Alchemist’s Supplies.</p>

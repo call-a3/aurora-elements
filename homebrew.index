@@ -4,7 +4,7 @@
 		<name>Homebrew</name>
 		<description>Content developed by Adriaan Callaerts</description>
 		<author url="https://www.adriaan.me">Adriaan Callaerts</author>
-		<update version="0.1.2">
+		<update version="1.0.0">
 			<file name="homebrew.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew.index" />
 		</update>
 	</info>
@@ -17,6 +17,6 @@
 		<file name="item-orators-tome.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/items/orators-tome.xml" />
 		<file name="item-survival-kit.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/items/survival-kit.xml" />
 		<file name="item-weapon-of-kinsfolk.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/items/weapon-of-kinsfolk.xml" />
-		<file name="race-kesho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kesho.xml" />
+		<file name="race-kessho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kessho.xml" />
 	</files>
 </index>
