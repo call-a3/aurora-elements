@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="race-kesho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kesho.xml" />
 		</update>
 	</info>	
@@ -45,7 +45,7 @@
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SEISMIC_AWARENESS" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_INORGANIC_ORGANISM" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_MINERAL_BODY" />
-			<!-- <grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SUBRACE" /> -->
+			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SUBRACE" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Language" id="ID_CALLA3_HOMEBREW_LANGUAGE_GENGO" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
@@ -165,13 +165,13 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_BORN_CRAFTSPERSON" />
-			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_MAKERS_EXPERTISE" />
-			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_QUICK_FIXER" />
-			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_RAPID_RECONSTRUCTION" />
+			<!-- <grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_BORN_CRAFTSPERSON" /> -->
+			<!-- <grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_MAKERS_EXPERTISE" /> -->
+			<!-- <grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_QUICK_FIXER" /> -->
+			<!-- <grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_RAPID_RECONSTRUCTION" /> -->
 		</rules>
 	</element>
-	<element name="Born Craftsperson" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_BORN_CRAFTSPERSON">
+	<!-- <element name="Born Craftsperson" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_BORN_CRAFTSPERSON">
 		<description>
 			<p>You gain proficiency with Jeweler’s Tools and Alchemist’s Supplies.</p>
 		</description>
@@ -182,8 +182,8 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
 		</rules>
-	</element>
-	<element name="Maker’s Expertise" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_MAKERS_EXPERTISE">
+	</element> -->
+	<!-- <element name="Maker’s Expertise" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_MAKERS_EXPERTISE">
 		<description>
 			<p>Your proficiency bonus is doubled for any ability check you make that uses either of the proficiencies granted by this subrace.</p>
 		</description>
@@ -194,8 +194,8 @@
 			<stat name="jewelers tools:proficiency" value="proficiency" bonus="double"/>
 			<stat name="alchemists supplies:proficiency" value="proficiency" bonus="double"/>
 		</rules>
-	</element>
-	<element name="Quick-fixer" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_QUICK_FIXER">
+	</element> -->
+	<!-- <element name="Quick-fixer" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_QUICK_FIXER">
 		<description>
 			<p>You know the Mending cantrip.</p>
 			<div element="ID_PHB_SPELL_MENDING" />
@@ -206,17 +206,17 @@
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_MENDING" />
 		</rules>
-	</element>
-	<element name="Rapid Reconstruction" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_RAPID_RECONSTRUCTION">
+	</element> -->
+	<!-- <element name="Rapid Reconstruction" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_RAPID_RECONSTRUCTION">
 		<description>
 			<p>When you cast mending, you can repair breaks or tears up to 5 feet in any dimension and restore up to 1 cubic foot of material per casting.</p>
 		</description>
 		<sheet>
 			<description>When you cast mending, you can repair breaks or tears up to 5 feet in any dimension and restore up to 1 cubic foot of material per casting.</description>
 		</sheet>
-	</element>
+	</element> -->
 	
-	<element name="Torēdā" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_TOREDA">
+	<!-- <element name="Torēdā" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_TOREDA">
 		<supports>Kesshō</supports>
 		<description>
 			<p>Torēdā are designed to interact with the overground world and act as emissaries and traders for the Kesshō community. As such they are geared especially for social interaction, as well as improved resilience to the dangers of dealing with overground travel.</p>
@@ -232,8 +232,8 @@
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SUNLIGHT_TOLERANCE" />
 			<select type="Language" name="Language (Gifted Linguist)" supports="Standard||Exotic" />
 		</rules>
-	</element>
-	<element name="Reinforced Construction" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_REINFORCED_CONSTRUCTION">
+	</element> -->
+	<!-- <element name="Reinforced Construction" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_REINFORCED_CONSTRUCTION">
 		<description>
 			<p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
 		</description>
@@ -243,17 +243,17 @@
 		<rules>
 			<stat name="hp" value="level" />
 		</rules>
-	</element>
-	<element name="Sunlight Tolerance" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SUNLIGHT_TOLERANCE">
+	</element> -->
+	<!-- <element name="Sunlight Tolerance" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SUNLIGHT_TOLERANCE">
 		<description>
 			<p>You don’t suffer from Sunlight Sensitivity.</p>
 		</description>
 		<sheet display="false">
 			<description>You don’t suffer from Sunlight Sensitivity.</description>
 		</sheet>
-	</element>
+	</element> -->
 	
-	<element name="Kōfu" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_TOREDA">
+	<!-- <element name="Kōfu" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_TOREDA">
 		<supports>Kesshō</supports>
 		<description>
 			<p>Kōfu are designed to delve deep into the ground to collect minerals and metals. They are smaller than other Kesshō to fit into narrow mineshafts, but possess extraordinary strength to be able to perform their duties.</p>
@@ -270,8 +270,8 @@
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_POWERFUL_BUILD" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_NIMBLE" />
 		</rules>
-	</element>
-	<element name="Powerful Build" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_POWERFUL_BUILD">
+	</element> -->
+	<!-- <element name="Powerful Build" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_POWERFUL_BUILD">
 		<description>
 			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
 		</description>
@@ -281,13 +281,13 @@
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
 		</rules>
-	</element>
-	<element name="Nimble" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_NIMBLE">
+	</element> -->
+	<!-- <element name="Nimble" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_NIMBLE">
 		<description>
 			<p>You can move through the space of any creature that is of a size larger than yours.</p>
 		</description>
 		<sheet>
 			<description>You can move through the space of any creature that is of a size larger than yours.</description>
 		</sheet>
-	</element>
+	</element> -->
 </elements>

@@ -4,7 +4,7 @@
 		<name>Homebrew</name>
 		<description>Content developed by Adriaan Callaerts</description>
 		<author url="https://www.adriaan.me">Adriaan Callaerts</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="homebrew.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew.index" />
 		</update>
 	</info>
