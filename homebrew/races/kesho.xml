@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="race-kesho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kesho.xml" />
 		</update>
 	</info>	
@@ -45,20 +45,11 @@
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SEISMIC_AWARENESS" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_INORGANIC_ORGANISM" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_MINERAL_BODY" />
-			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SUBRACE" />
+			<!-- <grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SUBRACE" /> -->
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<grant type="Language" id="ID_CALLA3_HOMEBREW_LANGUAGE_GENGO" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-		</rules>
-	</element>
-	<element name="Kesshō Subrace" type="Racial Trait" source="Player’s Handbook" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SUBRACE">
-		<description>
-			<p>Kesshō are constructed for a specific purpose, which they call Sonzai Igi. Over thousands of years, the Kesshō have developed techniques to intentionally create desirable traits in their creations to optimize each Kesshō for their specific purpose. Kesshō will dedicate their life to this goal and spend little time and attention on much else. Choose one of these subraces.</p>
-		</description>
-		<sheet display="false"/>
-		<rules>
-			<select type="Sub Race" name="Kesshō Subrace" supports="Kesshō" />
 		</rules>
 	</element>
 	<element name="Gengo" type="Language" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_LANGUAGE_GENGO">
@@ -154,6 +145,15 @@
 	</element>
 
 	<!-- subraces -->
+	<element name="Kesshō Subrace" type="Racial Trait" source="Player’s Handbook" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SUBRACE">
+		<description>
+			<p>Kesshō are constructed for a specific purpose, which they call Sonzai Igi. Over thousands of years, the Kesshō have developed techniques to intentionally create desirable traits in their creations to optimize each Kesshō for their specific purpose. Kesshō will dedicate their life to this goal and spend little time and attention on much else. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Sub Race" name="Kesshō Subrace" supports="Kesshō" />
+		</rules>
+	</element>
 	<element name="Mēkā" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_MEKA">
 		<supports>Kesshō</supports>
 		<description>

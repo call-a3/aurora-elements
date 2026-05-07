@@ -4,7 +4,7 @@
 		<name>call-a3</name>
 		<description>Content curated by Adriaan Callaerts</description>
 		<author url="https://www.adriaan.me">Adriaan Callaerts</author>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="call-a3.index" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/call-a3.index" />
 		</update>
 	</info>
