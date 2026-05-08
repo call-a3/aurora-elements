@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="archetype-paladin-connection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/archetypes/paladin/connection.xml" />
 		</update>
 	</info>
@@ -196,7 +196,7 @@
 			<p class="indent">Additionally, you can no longer be Frightened or Charmed by creatures that have harmed a helpless or non-hostile creature within the last minute.</p>
 		</description>
 		<sheet action="Reaction">
-			<description>Whenever a creature within 30ft deals damage to another creature</description>
+			<description>Whenever a creature within 30ft deals damage to another creature, deal {{level:paladin}} psychic damage, they have disadvantage on their next attack roll and can’t benefit from advantage on attack rolls until the end of their next turn.</description>
 		</sheet>
 	</element>
 	<element name="Avatar of Connection" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_HOLY_NIMBUS">

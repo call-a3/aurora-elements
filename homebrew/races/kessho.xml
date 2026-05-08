@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="race-kesho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kesho.xml" />
 		</update>
 	</info>	
@@ -154,7 +154,7 @@
 			<select type="Sub Race" name="Kesshō Subrace" supports="Kessho" />
 		</rules>
 	</element>
-	<element name="Mēkā" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_MEKA">
+	<element name="Meka" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_MEKA">
 		<supports>Kessho</supports>
 		<description>
 			<p>Mēkā are designed to participate in the early stages of Qurisutaru: to perform the alchemical processing and stonecutting that goes into designing, growing and polishing a body until it can be awakened into a new Kesshō.</p>
@@ -216,7 +216,7 @@
 		</sheet>
 	</element> -->
 	
-	<element name="Torēdā" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_TOREDA">
+	<element name="Toreda" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_TOREDA">
 		<supports>Kessho</supports>
 		<description>
 			<p>Torēdā are designed to interact with the overground world and act as emissaries and traders for the Kesshō community. As such they are geared especially for social interaction, as well as improved resilience to the dangers of dealing with overground travel.</p>
