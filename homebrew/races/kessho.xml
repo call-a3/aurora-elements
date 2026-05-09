@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.16">
+		<update version="0.0.17">
 			<file name="race-kesho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kesho.xml" />
 		</update>
 	</info>	
@@ -109,7 +109,7 @@
 			<p class="indent">This can’t be used to detect flying or incorporeal creatures.</p>
 		</description>
 		<sheet>
-			<description>You have advantage on Wisdom (Perception) checks to detect creatures that move within {{seismic awareness:range}} feet of you, provided that you and the creature are in contact with the same solid or liquid substance and you are not incapacitated. This can’t be used to detect flying or incorporeal creatures.</description>
+			<description>You have advantage on Wisdom (Perception) checks to detect creatures that move within {{seismic awareness:range}} feet of you, while in contact with the same solid or liquid substance and you are not incapacitated. You can’t detect flying or incorporeal creatures.</description>
 		</sheet>
 		<rules>
 			<grant type="Vision" id="ID_VISION_SEISMIC_AWARENESS" />
@@ -125,9 +125,8 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>You have advantage on saving throws against being poisoned, and you have resistance to poison damage.
-			You don’t need to eat food like a humanoid. Instead, you consume a variety of minerals and metals. You need to consume water like humanoids.
-			You are immune to disease.</description>
+			<description>You have advantage on saving throws against being poisoned, have resistance to poison damage and are immune to disease.
+			You eat rocks instead of humanoid food, but need to consume water like humanoids.</description>
 		</sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
@@ -186,15 +185,11 @@
 	</element>
 	<element name="Maker’s Expertise" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_MAKERS_EXPERTISE">
 		<description>
-			<p>Your proficiency bonus is doubled for any ability check you make that uses either of the proficiencies granted by this subrace.</p>
+			<p>Your proficiency bonus is doubled for any ability check you make that uses either of the tool proficiencies granted by this subrace.</p>
 		</description>
 		<sheet>
-			<description>Your proficiency bonus is doubled (to +{{jewelers tools:proficiency}}) for any ability check you make that uses either of the proficiencies granted by this subrace.</description>
+			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the tool proficiencies granted by this subrace.</description>
 		</sheet>
-		<rules>
-			<stat name="jewelers tools:proficiency" value="proficiency" bonus="double"/>
-			<stat name="alchemists supplies:proficiency" value="proficiency" bonus="double"/>
-		</rules>
 	</element>
 	<element name="Quick-fixer" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_QUICK_FIXER">
 		<description>
@@ -238,8 +233,8 @@
 		<description>
 			<p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
 		</description>
-		<sheet display="false">
-			<description>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</description>
+		<sheet>
+			<description>Your hit point maximum increases by 1 per level.</description>
 		</sheet>
 		<rules>
 			<stat name="hp" value="level" />
