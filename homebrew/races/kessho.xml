@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.15">
+		<update version="0.0.16">
 			<file name="race-kesho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kesho.xml" />
 		</update>
 	</info>	
@@ -228,7 +228,7 @@
 		</description>
 		<sheet display="false" alt="Kesshō (Torēdā)" />
 		<rules>
-			<select type="Proficiency" name="Skill Proficiency, Born Charmer" supports="ID_PROFICIENCY_SKILL_DECEPTION||ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Skill Proficiency, Born Charmer" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERSUASION" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_REINFORCED_CONSTRUCTION" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_SUNLIGHT_TOLERANCE" />
 			<select type="Language" name="Language (Gifted Linguist)" supports="Standard||Exotic" />
