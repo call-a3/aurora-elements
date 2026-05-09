@@ -136,7 +136,7 @@
 			<description>Choose a creature that you can see within 30ft. It must succeed on a Charisma saving throw or have disadvantage on attack rolls against any creature that has not harmed it.</description>
 		</sheet>
 	</element>
-	<!-- <element name="Aura of Protection" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_PROTECTION">
+	<element name="Aura of Protection" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_PROTECTION">
 		<description>
 			<p>The bonus granted by Aura of Protection starting at 6th level does not apply to saving throws made against this Oath’s features.</p>
 		</description>
@@ -144,10 +144,10 @@
 			<description>Aura of Protection description... but exclude allies</description>
 		</sheet>
 		<rules>
-			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_PROTECTION" />
+			<!-- <grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_PROTECTION" /> -->
 		</rules>
-	</element> -->
-	<element name="Aura of Deescalation" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_AURA_OF_DEESCALATION">
+	</element>
+	<element name="Aura of Deescalation" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_DEESCALATION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DEVOTION_AURA_OF_DEESCALATION</requirements>
 		<description>
 			<p>Starting at 7th level, your mere presence discourages violence. You and any creatures within 10 feet of you gain the following benefits:</p>
@@ -184,7 +184,7 @@
 			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_IMPROVED_DIVINE_SMITE" />
 		</rules>
 	</element>
-	<element name="Burden of Witness" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_PURITY_OF_SPIRIT">
+	<element name="Burden of Witness" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_BURDEN_OF_WITNESS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_BURDEN_OF_WITNESS</requirements>
 		<description>
 			<p>Beginning at 15th level, whenever a creature you can see within 30 feet deals damage to another creature, you can use your reaction to bear witness to the harm.</p>
@@ -199,7 +199,7 @@
 			<description>Whenever a creature within 30ft deals damage to another creature, deal {{level:paladin}} psychic damage, they have disadvantage on their next attack roll and can’t benefit from advantage on attack rolls until the end of their next turn.</description>
 		</sheet>
 	</element>
-	<element name="Avatar of Connection" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_HOLY_NIMBUS">
+	<element name="Avatar of Connection" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AVATAR_OF_CONNECTION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_AVATAR_OF_CONNECTION</requirements>
 		<description>
 			<p>At 20th level, you become an avatar of potential reconciliation. As an action, you undergo a transformation that lasts for 1 minute. You emit a palpable 30-foot radius aura of presence, calm and emotional gravity.</p>

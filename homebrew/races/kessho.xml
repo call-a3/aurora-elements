@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.13">
+		<update version="0.0.14">
 			<file name="race-kesho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kesho.xml" />
 		</update>
 	</info>	
@@ -164,7 +164,7 @@
 			<p class="indent"><strong><em>Quick-fixer.</em></strong> You know the Mending cantrip.</p>
 			<p class="indent"><strong><em>Rapid Reconstruction.</em></strong> When you cast mending, you can repair breaks or tears up to 5 feet in any dimension and restore up to 1 cubic foot of material per casting.</p>
 		</description>
-		<sheet display="false" name="Kesshō (Mēkā)" />
+		<sheet display="false" alt="Kesshō (Mēkā)" />
 		<rules>
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_BORN_CRAFTSPERSON" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_MAKERS_EXPERTISE" />
@@ -226,7 +226,7 @@
 			<p class="indent"><strong><em>Sunlight Tolerance.</em></strong> You don’t suffer from Sunlight Sensitivity.</p>
 			<p class="indent"><strong><em>Gifted Linguist.</em></strong> You can speak, read and write one additional language.</p>
 		</description>
-		<sheet display="false" name="Kesshō (Torēdā)" />
+		<sheet display="false" alt="Kesshō (Torēdā)" />
 		<rules>
 			<select type="Proficiency" name="Skill Proficiency, Born Charmer" supports="Persuasion||Deception" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_REINFORCED_CONSTRUCTION" />
@@ -258,12 +258,12 @@
 		<supports>Kessho</supports>
 		<description>
 			<p>Kōfu are designed to delve deep into the ground to collect minerals and metals. They are smaller than other Kesshō to fit into narrow mineshafts, but possess extraordinary strength to be able to perform their duties.</p>
-			<p class="indent"><strong><em>Born Delver.</em></strong> You are proficient with Athletics (Strenth) and Nature (Intelligence) checks.</p>
+			<p class="indent"><strong><em>Born Delver.</em></strong> You are proficient with Athletics (Strength) and Nature (Intelligence) checks.</p>
 			<p class="indent"><strong><em>Size.</em></strong> Your size is Small.</p>
 			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
 			<p class="indent"><strong><em>Nimble.</em></strong> You can move through the space of any creature that is of a size larger than yours.</p>
 		</description>
-		<sheet display="false" name="Kesshō (Kōfu)" />
+		<sheet display="false" alt="Kesshō (Kōfu)" />
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />

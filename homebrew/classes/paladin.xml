@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="class-paladin.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/classes/paladin.xml" />
 		</update>
 	</info>
 
 	<element name="Divine Sense" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_CLASS_FEATURE_PALADIN_DIVINE_SENSE">
+		<compendium display="false" />
 		<description>
-			<p></p>
+			<p>Your training has attuned your senses to be more aware of certain aspects of your surroundings.</p>
 		</description>
-		<sheet display="false">
-			<description></description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
 			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SENSE" />
 			<select type="Class Feature" name="Divine Sense" supports="Divine Sense" />
