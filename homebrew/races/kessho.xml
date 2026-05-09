@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.9">
+		<update version="0.0.10">
 			<file name="race-kesho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kesho.xml" />
 		</update>
 	</info>	
@@ -37,7 +37,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Kesshō)" supports="Custom Ability Score Improvement Option" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Kesshō)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" requirements="!ID_SIZE_SMALL" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_IMPROVED_DARKVISION" />
@@ -52,6 +52,32 @@
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 		</rules>
 	</element>
+
+	<element name="Ability Score Improvement +2, +1" type="Ability Score Improvement" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_1">
+		<supports>Custom Ability Score Improvement Option</supports>
+		<requirements>!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI</requirements>
+		<description>
+			<p>You can increase one of the scores by 2 and increase a different score by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2" supports="Custom Ability Score Increase 2" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" supports="Custom Ability Score Increase 1" />
+		</rules>
+	</element>
+
+	<element name="Ability Score Improvement +1, +1, +1" type="Ability Score Improvement" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2">
+		<supports>Custom Ability Score Improvement Option</supports>
+		<requirements>!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI</requirements>
+		<description>
+			<p>You can increase three different scores by 1.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" number="3" supports="Custom Ability Score Increase 1" />
+		</rules>
+	</element>
+
 	<element name="Gengo" type="Language" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_LANGUAGE_GENGO">
 		<supports>Exotic</supports>
 		<description>
