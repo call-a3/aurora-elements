@@ -5,9 +5,9 @@
 			<file name="asis.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/common/asis.xml" />
 		</update>
 	</info>	
-	<element name="Ability Score Improvement +2, +1" type="Ability Score Improvement" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_1">
-		<supports>Custom Ability Score Improvement Option</supports>
+	<element name="Ability Score Improvement +2, +1" type="Ability Score Improvement" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2_1">
 		<requirements>!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI</requirements>
+		<supports>Custom Ability Score Improvement Option</supports>
 		<description>
 			<p>You can increase one of the scores by 2 and increase a different score by 1.</p>
 		</description>
@@ -18,9 +18,9 @@
 		</rules>
 	</element>
 
-	<element name="Ability Score Improvement +1, +1, +1" type="Ability Score Improvement" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2">
-		<supports>Custom Ability Score Improvement Option</supports>
+	<element name="Ability Score Improvement +1, +1, +1" type="Ability Score Improvement" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_1_1_1">
 		<requirements>!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI</requirements>
+		<supports>Custom Ability Score Improvement Option</supports>
 		<description>
 			<p>You can increase three different scores by 1.</p>
 		</description>
