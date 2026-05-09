@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="class-paladin.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/classes/paladin.xml" />
+		</update>
+	</info>
+
+	<element name="Divine Sense" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_CLASS_FEATURE_PALADIN_DIVINE_SENSE">
+		<description>
+			<p></p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SENSE" />
+			<select type="Class Feature" name="Divine Sense" supports="Divine Sense" />
+		</rules>
+	</element>
+
+	<element name="Supernatural Sense" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_CLASS_FEATURE_PALADIN_DIVINE_SENSE_SUPERNATURAL">
+		<supports>Divine Sense</supports>
+		<description>
+			<p>You are finally attuned to all other living organisms and their presence registers on your senses like a subtle welcome that announces their life essence in your vicinity. You sense the presence of other creatures within 60 feet of you while you are not Incapacitated. At the DM’s discretion, they might also limit your ability to sense creatures while you are Deafened, Blinded or Stunned.</p>
+			<p class="indent">As an action, you can open your awareness further to learn more about any creature within 60ft of you that is not behind total cover. Make a Charisma (Perception) check to attempt to sense the following:</p>
+			<table>
+				<thead>
+					<tr><td class="col-10">DC</td><td>Information learned</td></tr>
+				</thead>
+				<tr><td>7</td><td>the exact location of any creature within 60 ft that is not behind total cover</td></tr>
+				<tr><td>12</td><td>their creature categories (humanoid, fiend, …)</td></tr>
+				<tr><td>17</td><td>their creature types (Elf, Goblin, …)</td></tr>
+				<tr><td>24</td><td>their identity: their name if the PC has met them before, or an adequate description of their current state of mind, their primary motivation, … to gleam their sense of self</td></tr>
+			</table>
+			<p class="indent">You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
+		</description>
+		<sheet usage="{{divine sense:count}}/Long Rest" action="Action">
+			<description>You are always aware of the presence of living creatures within {{divine sense:range}} feet of you. Make a Charisma (Perception) check. Until the end of your next turn, you learn the following information:
+			DC 7: the exact location of any creature within {{divine sense:range}}ft that is not behind total cover; DC 12: their creature categories (humanoid, fiend, …); DC 17: their creature types (Elf, Goblin, …); DC 24: their identity: their name if you have met them before, or an adequate description of their current state of mind, their primary motivation, … to gleam their sense of self</description>
+		</sheet>
+		<rules>
+			<stat name="divine sense:range" value="60" bonus="base" />
+			<stat name="divine sense:count" value="1" />
+			<stat name="divine sense:count" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Divine Sense" type="Class Feature" source="Player’s Handbook" id="ID_CALLA3_HOMEBREW_CLASS_FEATURE_PALADIN_DIVINE_SENSE_ORIGINAL">
+		<supports>Divine Sense</supports>
+		<description>
+			<p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>hallow</i> spell.</p>
+			<p class="indent">You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
+		</description>
+		<sheet usage="{{divine sense:count}}/Long Rest" action="Action">
+			<description>You can open your awareness to detect presence of strong evil. Until the end of your next turn, you know the location of any celestial, fiend, or undead within {{divine sense:range}} feet of you that is not behind total cover. You know the type of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated.</description>
+		</sheet>
+		<rules>
+			<stat name="divine sense:range" value="60" bonus="base" />
+			<stat name="divine sense:count" value="1" />
+			<stat name="divine sense:count" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Paladin, LV01: Alternate Divine Sense" type="Item" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ITEM_OCF_PALADIN_DIVINE_PRESENCE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_CALLA3_HOMEBREW_CLASS_FEATURE_PALADIN_DIVINE_SENSE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">first level, 1st level, Class Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_CALLA3_HOMEBREW_CLASS_FEATURE_PALADIN_DIVINE_SENSE" requirements="[level:paladin:1]"/>
+		</rules>
+	</element>
+</elements>
