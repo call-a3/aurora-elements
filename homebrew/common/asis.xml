@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.12">
+		<update version="1.0.0">
 			<file name="asis.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/common/asis.xml" />
 		</update>
 	</info>	
