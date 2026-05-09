@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.12">
+		<update version="0.0.13">
 			<file name="race-kesho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kesho.xml" />
 		</update>
 	</info>	
@@ -50,168 +50,6 @@
 			<grant type="Language" id="ID_CALLA3_HOMEBREW_LANGUAGE_GENGO" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-		</rules>
-	</element>
-
-	<element name="Ability Score Improvement +2, +1" type="Ability Score Improvement" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_1">
-		<supports>Custom Ability Score Improvement Option</supports>
-		<requirements>!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI</requirements>
-		<description>
-			<p>You can increase one of the scores by 2 and increase a different score by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2" supports="Custom Ability Score Increase 2" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" supports="Custom Ability Score Increase 1" />
-		</rules>
-	</element>
-
-	<element name="Ability Score Improvement +1, +1, +1" type="Ability Score Improvement" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2">
-		<supports>Custom Ability Score Improvement Option</supports>
-		<requirements>!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI</requirements>
-		<description>
-			<p>You can increase three different scores by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" number="3" supports="Custom Ability Score Increase 1" />
-		</rules>
-	</element>
-
-	<!-- Custom Ability Score Increases for when Customized ASI Option is not available. -->
-	<!-- +1 ASI's -->
-	<element name="Strength" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_1">
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_2||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<supports>Custom Ability Score Increase 1</supports>
-		<description>
-			<p>Your Strength increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="strength" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Dexterity" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_1">
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_2||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<supports>Custom Ability Score Increase 1</supports>
-		<description>
-			<p>Your Dexterity increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="dexterity" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Constitution" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_1">
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_2||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<supports>Custom Ability Score Increase 1</supports>
-		<description>
-			<p>Your Constitution increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="constitution" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Intelligence" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_1">
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_2||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<supports>Custom Ability Score Increase 1</supports>
-		<description>
-			<p>Your Intelligence increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="intelligence" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Wisdom" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_1">
-		<supports>Custom Ability Score Increase 1</supports>
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_2||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<description>
-			<p>Your Wisdom increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="wisdom" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Charisma" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_1">
-		<supports>Custom Ability Score Increase 1</supports>
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_2||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<description>
-			<p>Your Charisma increases by 1.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="charisma" value="1" alt="Ability Score Increase" />
-		</rules>
-	</element>
-
-	<!-- +2 ASI's -->
-	<element name="Strength" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_2">
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_STRENGTH_INCREASE_1||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<supports>Custom Ability Score Increase 2</supports>
-		<description>
-			<p>Your Strength increases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="strength" value="2" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Dexterity" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_2">
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_DEXTERITY_INCREASE_1||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<supports>Custom Ability Score Increase 2</supports>
-		<description>
-			<p>Your Dexterity increases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="dexterity" value="2" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Constitution" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_2">
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_CONSTITUTION_INCREASE_1||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<supports>Custom Ability Score Increase 2</supports>
-		<description>
-			<p>Your Constitution increases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="constitution" value="2" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Intelligence" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_2">
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_INTELLIGENCE_INCREASE_1||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<supports>Custom Ability Score Increase 2</supports>
-		<description>
-			<p>Your Intelligence increases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="intelligence" value="2" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Wisdom" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_2">
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_1||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<supports>Custom Ability Score Increase 2</supports>
-		<description>
-			<p>Your Wisdom increases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="wisdom" value="2" alt="Ability Score Increase" />
-		</rules>
-	</element>
-	<element name="Charisma" type="Ability Score Improvement" source="Internal" id="ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_2">
-		<requirements>!(ID_CALLA3_HOMEBREW_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_1||ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI)</requirements>
-		<supports>Custom Ability Score Increase 2</supports>
-		<description>
-			<p>Your Charisma increases by 2.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<stat name="charisma" value="2" alt="Ability Score Increase" />
 		</rules>
 	</element>
 
@@ -326,7 +164,7 @@
 			<p class="indent"><strong><em>Quick-fixer.</em></strong> You know the Mending cantrip.</p>
 			<p class="indent"><strong><em>Rapid Reconstruction.</em></strong> When you cast mending, you can repair breaks or tears up to 5 feet in any dimension and restore up to 1 cubic foot of material per casting.</p>
 		</description>
-		<sheet display="false" />
+		<sheet display="false" name="Kesshō (Mēkā)" />
 		<rules>
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_BORN_CRAFTSPERSON" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_MAKERS_EXPERTISE" />
@@ -388,7 +226,7 @@
 			<p class="indent"><strong><em>Sunlight Tolerance.</em></strong> You don’t suffer from Sunlight Sensitivity.</p>
 			<p class="indent"><strong><em>Gifted Linguist.</em></strong> You can speak, read and write one additional language.</p>
 		</description>
-		<sheet display="false" />
+		<sheet display="false" name="Kesshō (Torēdā)" />
 		<rules>
 			<select type="Proficiency" name="Skill Proficiency, Born Charmer" supports="Persuasion||Deception" />
 			<grant type="Racial Trait" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_REINFORCED_CONSTRUCTION" />
@@ -416,8 +254,8 @@
 		</sheet>
 	</element>
 	
-	<element name="Kōfu" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_TOREDA">
-		<supports>Kesshō</supports>
+	<element name="Kofu" type="Sub Race" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_SUBRACE_KOFU">
+		<supports>Kessho</supports>
 		<description>
 			<p>Kōfu are designed to delve deep into the ground to collect minerals and metals. They are smaller than other Kesshō to fit into narrow mineshafts, but possess extraordinary strength to be able to perform their duties.</p>
 			<p class="indent"><strong><em>Born Delver.</em></strong> You are proficient with Athletics (Strenth) and Nature (Intelligence) checks.</p>
@@ -425,7 +263,7 @@
 			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
 			<p class="indent"><strong><em>Nimble.</em></strong> You can move through the space of any creature that is of a size larger than yours.</p>
 		</description>
-		<sheet display="false" />
+		<sheet display="false" name="Kesshō (Kōfu)" />
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />

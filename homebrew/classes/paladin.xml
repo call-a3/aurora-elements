@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-paladin.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/classes/paladin.xml" />
 		</update>
 	</info>
@@ -19,10 +19,10 @@
 		</rules>
 	</element>
 
-	<element name="Supernatural Sense" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_CLASS_FEATURE_PALADIN_DIVINE_SENSE_SUPERNATURAL">
+	<element name="Divine Sense - Life" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_CLASS_FEATURE_PALADIN_DIVINE_SENSE_SUPERNATURAL">
 		<supports>Divine Sense</supports>
 		<description>
-			<p>You are finally attuned to all other living organisms and their presence registers on your senses like a subtle welcome that announces their life essence in your vicinity. You sense the presence of other creatures within 60 feet of you while you are not Incapacitated. At the DM’s discretion, they might also limit your ability to sense creatures while you are Deafened, Blinded or Stunned.</p>
+			<p>You are finally attuned to all other lifeforms and their presence registers on your senses like a subtle welcome that announces their life essence in your vicinity. You sense the presence of other creatures within 60 feet of you while you are not Incapacitated. At the DM’s discretion, they might also limit your ability to sense creatures while you are Deafened, Blinded or Stunned.</p>
 			<p class="indent">As an action, you can open your awareness further to learn more about any creature within 60ft of you that is not behind total cover. Make a Charisma (Perception) check to attempt to sense the following:</p>
 			<table>
 				<thead>
@@ -36,8 +36,8 @@
 			<p class="indent">You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>
 		</description>
 		<sheet usage="{{divine sense:count}}/Long Rest" action="Action">
-			<description>You are always aware of the presence of living creatures within {{divine sense:range}} feet of you. Make a Charisma (Perception) check. Until the end of your next turn, you learn the following information:
-			DC 7: the exact location of any creature within {{divine sense:range}}ft that is not behind total cover; DC 12: their creature categories (humanoid, fiend, …); DC 17: their creature types (Elf, Goblin, …); DC 24: their identity: their name if you have met them before, or an adequate description of their current state of mind, their primary motivation, … to gleam their sense of self</description>
+			<description>You always sense the presence of creatures within {{divine sense:range}} feet of you. Make a Charisma (Perception) check. Until the end of your next turn, you learn the following information of any creature within {{divine sense:range}}ft that is not behind total cover:
+			DC 7: their exact location; DC 12: their creature category (humanoid, fiend, …); DC 17: their creature type (Elf, Goblin, …); DC 24: their identity: their name if you have met them before, or an adequate description of their current state of mind/primary motivation/… to gleam their sense of self</description>
 		</sheet>
 		<rules>
 			<stat name="divine sense:range" value="60" bonus="base" />
@@ -46,7 +46,7 @@
 		</rules>
 	</element>
 
-	<element name="Divine Sense" type="Class Feature" source="Player’s Handbook" id="ID_CALLA3_HOMEBREW_CLASS_FEATURE_PALADIN_DIVINE_SENSE_ORIGINAL">
+	<element name="Divine Sense - Alignment" type="Class Feature" source="Player’s Handbook" id="ID_CALLA3_HOMEBREW_CLASS_FEATURE_PALADIN_DIVINE_SENSE_ORIGINAL">
 		<supports>Divine Sense</supports>
 		<description>
 			<p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <i>hallow</i> spell.</p>

@@ -13,6 +13,7 @@
 		<file name="archetype-paladin-connection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/archetypes/paladin/connection.xml" />
 		<file name="class-paladin.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/classes/paladin.xml" />
 		<file name="class-untrained.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/classes/untrained.xml" />
+		<file name="asis.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/common/asis.xml" />
 		<file name="item-glass-of-inspection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/items/glass-of-inspection.xml" />
 		<file name="item-lethifold-chain-mail.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/items/lethifold-chain-mail.xml" />
 		<file name="item-orators-tome.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/items/orators-tome.xml" />
