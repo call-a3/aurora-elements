@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="class-paladin.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/classes/paladin.xml" />
 		</update>
 	</info>
@@ -13,7 +13,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SENSE" />
+			<grant type="Grants" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SENSE" />
 			<select type="Class Feature" name="Divine Sense" supports="Divine Sense" />
 		</rules>
 	</element>
