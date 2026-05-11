@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.17">
+		<update version="0.0.18">
 			<file name="race-kesho.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/races/kesho.xml" />
 		</update>
 	</info>	
@@ -185,10 +185,10 @@
 	</element>
 	<element name="Maker’s Expertise" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_MAKERS_EXPERTISE">
 		<description>
-			<p>Your proficiency bonus is doubled for any ability check you make that uses either of the tool proficiencies granted by this subrace.</p>
+			<p>Your proficiency bonus is doubled for any ability check that uses Jeweler’s Tools or Alchemist’s Supplies.</p>
 		</description>
 		<sheet>
-			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the tool proficiencies granted by this subrace.</description>
+			<description>Your proficiency bonus is doubled for any ability check that uses Jeweler’s Tools or Alchemist’s Supplies.</description>
 		</sheet>
 	</element>
 	<element name="Quick-fixer" type="Racial Trait" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_RACIAL_TRAIT_KESSHO_QUICK_FIXER">
