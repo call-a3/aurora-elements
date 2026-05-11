@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="archetype-paladin-connection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/archetypes/paladin/connection.xml" />
 		</update>
 	</info>
@@ -226,4 +226,23 @@
 	<element name="Persistant Endurance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_PERSISTENT_ENDURANCE" />
 	<element name="Burden of Witness Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_BURDEN_OF_WITNESS" />
 	<element name="Avatar of Connection Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_AVATAR_OF_CONNECTION" />
+
+	<!--Feature Replacement Grants that we rely on from players handbook (if not already defined) -->
+	<element name="Divine Smite Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SMITE" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_EXTRA_ATTACK" />
+	<element name="Aura of Protection Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_PROTECTION" />
+	<element name="Improved Divine Smite Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_IMPROVED_DIVINE_SMITE" />
+	<!--Adding Feature Replacement Grants that we rely on to core paladin (if not already added) -->
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_DIVINE_SMITE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SMITE</requirements>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_EXTRA_ATTACK</requirements>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_AURA_OF_PROTECTION</requirements>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_IMPROVED_DIVINE_SMITE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_IMPROVED_DIVINE_SMITE</requirements>
+	</append>
 </elements>
