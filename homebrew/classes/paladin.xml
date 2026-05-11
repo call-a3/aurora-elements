@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="class-paladin.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/classes/paladin.xml" />
 		</update>
 	</info>
@@ -81,7 +81,7 @@
 	</element>
 
 	<!--Feature Replacement Grants that we rely on from players handbook (if not already defined) -->
-	<element name="Divine Smite Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SENSE" />
+	<element name="Divine Sense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SENSE" />
 	<!--Adding Feature Replacement Grants that we rely on to core paladin (if not already added) -->
 	<append id="ID_WOTC_PHB_CLASS_FEATURE_PALADIN_DIVINE_SENSE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SENSE</requirements>
