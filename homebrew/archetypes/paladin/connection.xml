@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="archetype-paladin-connection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/archetypes/paladin/connection.xml" />
 		</update>
 	</info>
@@ -20,7 +20,7 @@
 			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_OATH_SPELLS" />
 			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_DIVINE_CONNECTION" />
 			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_CHANNEL_DIVINITY" />
-			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_PROTECTION" />
+			<!-- <div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_PROTECTION" /> -->
 			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_DEESCALATION" />
 			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_PERSISTENT_ENDURANCE" />
 			<div element="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_BURDEN_OF_WITNESS" />
@@ -29,35 +29,14 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_OATH_SPELLS" level="3" />
-			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_DIVINE_CONNECTION" level="3" />
 			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_CHANNEL_DIVINITY" level="3" />
-			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_PROTECTION" level="6" />
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_DIVINE_CONNECTION" level="3" />
+			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_EXTRA_REACTION" level="5" />
+			<!-- <grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_PROTECTION" level="6" /> -->
 			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_DEESCALATION" level="7" />
 			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_PERSISTENT_ENDURANCE" level="11" />
 			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_BURDEN_OF_WITNESS" level="15" />
 			<grant type="Archetype Feature" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AVATAR_OF_CONNECTION" level="20" />
-		</rules>
-	</element>
-	<element name="Divine Connection" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_DIVINE_CONNECTION">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_DIVINE_CONNECTION</requirements>
-		<description>
-			<p>When you take this oath at 3rd level, this ability replaces your Divine Smite ability.</p>
-			<p>When a creature you can see within 30ft makes an attack against a creature other than you, you can use your reaction and expend a spell slot to intervene.</p>
-			<p>The attacker must make a Charisma saving throw against your paladin spell save DC + the level of the spell slot spent. On a failure:</p>
-			<ul>
-				<li>The triggering attack automatically misses.</li>
-				<li>The attacker is unable to make another attack until the start of its next turn.</li>
-				<li>Until the end of its next turn, it has disadvantage on saving throws against being Charmed or Frightened.</li>
-			</ul>
-			<p>Additionally, you may speak a brief sentence that the creature understands (if you share a language), and the DM should allow that sentence to meaningfully influence NPC behaviour if appropriate.</p>
-			<p>On a success, the attack proceeds as normal, but you may reduce any damage caused by the attack by half.</p>
-		</description>
-		<sheet action="Reaction">
-			<description>When a creature you can see within 30ft makes an attack against a creature other than you, expend a spell slot to intervene. The attacker makes a Charisma saving throw against your paladin spell save DC + the level of the spell slot spent.
-			On a failure: the attack misses and until the start of its next turn, the attacker is unable to make another attack and has disadvantage on saves against being Charmed or Frightened. On a success, the attack succeeds but its damage is halved.</description>
-		</sheet>
-		<rules>
-			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SMITE" />
 		</rules>
 	</element>
 	<element name="Oath Spells" type="Archetype Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_OATH_SPELLS">
@@ -135,6 +114,39 @@
 		<sheet alt="Mirror of Intention" action="Bonus Action" usage="Channel Divinity">
 			<description>Choose a creature that you can see within 30ft. It must succeed on a Charisma saving throw or have disadvantage on attack rolls against any creature that has not harmed it.</description>
 		</sheet>
+	</element>
+	<element name="Divine Connection" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_DIVINE_CONNECTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_CONNECTION_DIVINE_CONNECTION</requirements>
+		<description>
+			<p>When you take this oath at 3rd level, this ability replaces your Divine Smite ability.</p>
+			<p>When a creature you can see within 30ft makes an attack against a creature other than you, you can use your reaction and expend a spell slot to intervene.</p>
+			<p>The attacker must make a Charisma saving throw against your paladin spell save DC + the level of the spell slot spent. On a failure:</p>
+			<ul>
+				<li>The triggering attack automatically misses.</li>
+				<li>The attacker is unable to make another attack until the start of its next turn.</li>
+				<li>Until the end of its next turn, it has disadvantage on saving throws against being Charmed or Frightened.</li>
+			</ul>
+			<p>Additionally, you may speak a brief sentence that the creature understands (if you share a language), and the DM should allow that sentence to meaningfully influence NPC behaviour if appropriate.</p>
+			<p>On a success, the attack proceeds as normal, but you may reduce any damage caused by the attack by half.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature you can see within 30ft makes an attack against a creature other than you, expend a spell slot to intervene. The attacker makes a Charisma saving throw against your paladin spell save DC + the level of the spell slot spent.
+			On a failure: the attack misses and until the start of its next turn, the attacker is unable to make another attack and has disadvantage on saves against being Charmed or Frightened. On a success, the attack succeeds but its damage is halved.</description>
+		</sheet>
+		<rules>
+			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_DIVINE_SMITE" />
+		</rules>
+	</element>
+	<element name="Extra Reaction" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_EXTRA_REACTION">
+		<description>
+			<p>Beginning at 5th level, you can react twice, instead of once, outside of your turn. This replaces the Extra Attack ability from the base Paladin class.</p>
+		</description>
+		<sheet>
+			<description>You can perform two reactions instead of one per turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Grant" id="ID_INTERNAL_FEATURE_REPLACEMENT_PALADIN_EXTRA_ATTACK" />
+		</rules>
 	</element>
 	<element name="Aura of Protection" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_AURA_OF_PROTECTION">
 		<description>
