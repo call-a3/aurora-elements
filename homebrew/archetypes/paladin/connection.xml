@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="archetype-paladin-connection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/archetypes/paladin/connection.xml" />
 		</update>
 	</info>
@@ -164,17 +164,17 @@
 		<description>
 			<p>Starting at 7th level, your mere presence discourages violence. You and any creatures within 10 feet of you gain the following benefits:</p>
 			<ul>
-				<li>When a creature in the aura deals damage to a creature that has not dealt damage since the start of its last turn, the damage is reduced by an amount equal to your proficiency bonus plus your Charisma modifier (minimum 1).</li>
-				<li>When a creature in the aura uses its action to attempt a social interaction (Persuasion, Deception, Insight, Intimidation, performance to calm, …) during combat, it gains advantage on that check.</li>
+				<li>When a creature has not dealt damage since the start of its last turn, any damage it receives is reduced by an amount equal to your proficiency bonus plus your Charisma modifier (minimum 1).</li>
+				<li>When a creature in the aura uses its action to attempt a social interaction (Persuasion, Deception, Insight, Intimidation, Performance to calm, …), it gains advantage on that check.</li>
 				<li>When a creature within the aura is reduced to 0 hit points, it is stabilized instead of dying unless the attacker explicitly declares lethal intent.</li>
 			</ul>
 			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
 		<sheet>
-			<description>Anyone within {{aura of deescalation:range}}ft of you gains the following benefits:
-			reduce any damage to a creature that has not dealt damage since the start of its last turn by {{aura of deescalation:damage reduction}};
-			advantage on any social interaction when using their action to do it;
-			when reduced to 0 HP, they are stabilized instead of dying unless the attacker explicitly declares lethal intent.</description>
+			<description>Anyone within {{aura of deescalation:range}}ft of you gains the following benefits: 
+			It reduces any damage taken by {{aura of deescalation:damage reduction}} if it has not dealt damage since the start of its last turn; 
+			It can gain advantage on any social interaction as an action; 
+			It is stabilized instead of dying when reduced to 0 HP, unless the attacker explicitly declares lethal intent.</description>
 		</sheet>
 		<rules>
 			<stat name="aura of deescalation:damage reduction" value="proficiency" />
