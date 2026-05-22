@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="archetype-paladin-connection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/archetypes/paladin/connection.xml" />
 		</update>
 	</info>
@@ -222,7 +222,7 @@
 			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
 		</description>
 		<sheet action="Action" usage="1/Long Rest">
-			<description>For one minute, within a 30 ft aura: hostile creatures have disadvantage on attack rolls, creatures that start their turn in the aura must succeed on a Wisdom saving throw or be unable to use the Attack action, creatures that start their turn in the aura regain {{cha:mod}} hitpoints if they have not dealt damage since the start of their last turn.</description>
+			<description>For one minute, within a 30 ft aura: hostile creatures have disadvantage on attack rolls, creatures that start their turn in the aura must succeed on a Wisdom saving throw or be unable to use the Attack action, creatures that start their turn in the aura regain {{charisma:modifier}} hitpoints if they have not dealt damage since the start of their last turn.</description>
 		</sheet>
 		<sheet action="Bonus Action" usage="Avatar of Connection">
 			<description>A creature in the aura that has dealt damage since the start of their last turn succeeds a Charisma saving throw or is Incapacitated until the end of its next turn.</description>
