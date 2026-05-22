@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="archetype-paladin-connection.xml" url="https://raw.githubusercontent.com/call-a3/aurora-elements/master/homebrew/archetypes/paladin/connection.xml" />
 		</update>
 	</info>
@@ -179,8 +179,8 @@
 		<rules>
 			<stat name="aura of deescalation:damage reduction" value="proficiency" />
 			<stat name="aura of deescalation:damage reduction" value="charisma:modifier" />
-			<stat name="aura of deescalation:range" value="10" />
-			<stat name="aura of deescalation:range" value="30" level="18" />
+			<stat name="aura of deescalation:range" value="10" bonus="base" />
+			<stat name="aura of deescalation:range" value="30" level="18" bonus="base" />
 		</rules>
 	</element>
 	<element name="Persistent Endurance" type="Class Feature" source="Adriaan Callaerts’ Homebrew" id="ID_CALLA3_HOMEBREW_ARCHETYPE_FEATURE_PALADIN_CONNECTION_PERSISTENT_ENDURANCE">
